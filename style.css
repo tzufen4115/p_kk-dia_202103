@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+/* logo */
+.logo{
+    text-align: center;
+    margin: 5px auto;
+}
+
+/* 橫幅 */
+.content{
+    background: url(../images/content-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 45px 0 6% 0;
+}
+
+
+}
+
+.lastest-catalog{
+    text-align: center;
+    padding: 8.5% 0;
+}
+
+.lastest-catalog a{
+    color: #f76c4e;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+h2{
+    font-size:50px;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+
+
+
+/* 公司簡介 */
+.company-bg{
+    background: url(./images/company-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+/* footer */
+  .footer li img{
+      width: 25px;
+      height: 25px;
+  }
+
+ 
