@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+.wrap {
+    max-width: 1240px;
+    margin: auto;
+}
+
 /* logo */
 .logo{
     text-align: center;
@@ -96,9 +101,22 @@ h1 {
 
 
 /* footer */
-  .footer li img{
+.footer li img{
       width: 25px;
       height: 25px;
   }
 
- 
+.text {
+    text-align: center;
+    padding: 230px 0;
+}
+
+.company p {
+    font-size: 22px;
+    line-height: 2;
+}
+
+ h3 {
+     font-size: 32px;
+     padding: 30px;
+ }
