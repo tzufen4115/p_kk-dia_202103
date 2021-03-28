@@ -2,18 +2,28 @@
     margin: 0;
     padding: 0;
     font-family: 微軟正黑體;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    font-weight: bold;
+    position: relative;
 }
+
+html { box-sizing: border-box;}
+*, *::before, *::after { box-sizing: inherit;}
 
 .wrap {
     max-width: 1240px;
     margin: auto;
+    padding: 0 30px;
+    /* @include rwd(laptop-s) {
+        width: 100%;
+        padding: 0 20px;
+      } */
 }
 
 /* logo */
 .logo{
     text-align: center;
-    margin: 5px auto;
+    margin: 8px auto 5px auto;
 }
 
 /* 橫幅 */
@@ -25,7 +35,7 @@
 
 .lastest-catalog{
     text-align: center;
-    padding: 8.5% 0;
+    /* padding: 8.5% 0; */
 }
 
 .lastest-catalog a{
@@ -38,8 +48,10 @@
 h2{
     font-size:55px;
     color: #ffffff;
-    margin-top: 220px;
-    margin-bottom: 45px;
+    /* margin-top: 200px;
+    margin-bottom: 45px; */
+    margin-top: 150px;
+    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -58,8 +70,47 @@ h2{
 /* 產品 */
 h1 {
     text-align: center;
+    font-size: 42px;
     color: #4a4a4a;
-    margin: 75px auto 50px auto;
+    /* margin: 75px auto 50px auto; */
+    font-weight: bold;
+    
+}
+
+.products .proucts-list {
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.products h1 {
+    margin: 0;
+    position: relative;
+    line-height: 0;
+}
+
+.products h1::before {
+    content: "";
+    display: inline-block;
+    /* float: left; */
+    
+    width: 30%;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 80px 0 0;
+    border-color: #f4f2f2 transparent transparent transparent;
+}
+
+.products h1 span {
+    position: absolute;
+    left: 50%;
+    top: 58%;
 }
 
 .products .products-list li {
@@ -69,6 +120,10 @@ h1 {
     float: left;
 }
 
+.products .products-list li:hover {
+    border-color: #f76c4e;
+}
+
 .products .products-list li p {
     font-size: 22px;
     text-align: center;
@@ -76,6 +131,7 @@ h1 {
     font-weight: bold;
     color: #4a4a4a;
     margin-top: 35px;
+    background: #fff;
 }
 
 .products .products-list li:hover{
@@ -87,6 +143,55 @@ h1 {
     max-width: 100%;
 }
 
+.contact-link {
+    text-align: center;
+    position: relative;
+    padding: 30px 0;
+    /* background: #f4f2f2; */
+}
+
+.contact-link a {
+    color: #f76c4e;
+    text-decoration: none;
+    border: 1px solid #f76c4e;
+    padding: 18px 5.5%;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-link a::before {
+    content: "";
+    background: url(../images/contact-bg.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+
+.contact-link a::after {
+    content: "";
+    background: url(../p_kk-dia_202103/images/icon_email.svg) no-repeat;
+    /* margin: 0px 15px;
+    position: absolute;
+    top: 63%;
+    transform: translateY(-70%); */
+}
+
+.contact-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    display: block;
+    border-top: 140px solid #fff;
+    border-right: 50px solid transparent;
+}
 
 /* 公司簡介 */
 .company-bg{
@@ -101,6 +206,11 @@ h1 {
 
 
 /* footer */
+
+.footer ul {
+    list-style: none;
+}
+
 .footer li img{
       width: 25px;
       height: 25px;
@@ -120,3 +230,82 @@ h1 {
      font-size: 32px;
      padding: 30px;
  }
+
+
+
+
+
+
+
+ /* footer-copyright */
+ .footer .footer-wrap {
+    padding: 66px 10% 80px 10%;
+}
+
+.footer-logo {
+    float: left;
+    margin-bottom: 60px;
+    width: 15%;
+}
+
+.footer-info {
+    width: 50%;
+    float: left;
+}
+
+.footer-info .info-number,.footer-info .info-add {
+    float: left;
+    color: #4a4a4a;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    line-height: 1.4;
+}
+
+
+.footer-link {
+    float: right;
+    width: 35%;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: #4a4a4a;
+}
+
+ .footer-copyright {
+     background: #f4f2f2;
+     color: #555555;
+     padding: 5px 0;
+     float: left;
+ }
+
+.footer-gtmc-link {
+    list-style: none;
+}
+
+.footer-gtmc-link a {
+    
+    text-decoration: none;
+    color: #555555;
+}
+.footer-gtmc-link li {
+    float: left;
+    padding: 0 10px;
+}
+
+.footer-gtmc-link li+li a::before {
+    content: "|";
+    color: #4a4a4a;
+    margin-right: 15px;
+}
+
+#footerlink {
+    float: right;
+    float: left;
+}
+.footer .footer-copyright .copyright {
+    float: left;
+    padding: 0 80px;
+}
