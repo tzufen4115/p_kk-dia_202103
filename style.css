@@ -106,8 +106,9 @@ h1 {
 
 .products-a h1 span {
     position: absolute;
-    left: 45.5%;
-    top: 58%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .products-a .products-list {
@@ -248,16 +249,10 @@ h1 {
     line-height: 2;
 }
 
- /* h3 {
-     font-size: 32px;
-     padding: 30px;
- } */
 
 .footer .footer-link ul li {
     display: inline-block;
     padding: 0 20px;
-    /* text-align: center; */
-    /* margin-bottom: 20px; */
 }
 
 .footer .footer-link ul .ft-line::before{
@@ -281,7 +276,6 @@ h1 {
 
  /* footer-copyright */
  .footer .ft-info {
-    /* padding: 66px 5% 120px 5%; */
     padding: 70px 80px;
     margin-bottom: 70px;
 }
@@ -289,12 +283,11 @@ h1 {
 .footer-logo {
     float: left;
     margin-right: 150px;
-    /* width: 15%; */
     
 }
 
 .footer-info {
-    width: 50%;
+    /* width: 50%; */
     float: left;
 }
 
@@ -303,9 +296,7 @@ h1 {
     color: #4a4a4a;
     font-size: 20px;
     font-weight: bold;
-    /* padding-left: 0; */
     list-style: none;
-    /* margin: 0; */
     margin-right: 80px;
     line-height: 1.4;
 }
@@ -313,7 +304,6 @@ h1 {
 
 .footer-link {
     float: right;
-    /* width: 35%; */
     font-size: 20px;
     font-weight: 800;
     text-align: center;
@@ -328,12 +318,8 @@ h1 {
 
 .footer, li {
     padding-bottom: 20px;
-    /* margin-right: 60px; */
 }
-/* 
-.footer, .info-add, li {
-    padding: ;
-} */
+
 
 
 /* copyright */
@@ -343,7 +329,6 @@ h1 {
      color: #555555;
      padding: 5px 0;
      float: left;
-    /* padding: 0 80px; */
     width: 100%;
  }
 
@@ -369,7 +354,6 @@ h1 {
     float: left;
     padding: 0 10px;
     position: relative;
-    /* margin-right: 5px; */
     display: inline-block;
 }
 
@@ -381,17 +365,152 @@ h1 {
 
 #footlink {
     float: right;
-    /* float: left; */
+
 }
 
-/* .foot-copyright .copyright{
-    float: left;
-} */
 
-/* .footer .footer-copyright .copyright {
-    background: #f4f2f2;
-    color: #555555;
-    padding: 5px 0;
-    float: left;
-    padding: 0 80px;
-} */
+
+h3 {
+    padding: 20px 0;
+}
+
+.footer-info .info-number, .footer-info .info-add {
+    margin-right: 0;
+}
+
+.footer-info .info-number {
+    margin-right: 80px;
+}
+
+
+.footer-gtmc-link li:first-child {
+    padding-left: 0;
+}
+
+
+
+@media(max-width: 1650px) {
+    .footer-info .info-number, .footer-info .info-add {
+        float: none;
+    }
+    .footer-link {
+        float: none;
+    }
+    .footer .footer-link ul li {
+        display: block;
+        padding: 10px 30px;
+    }
+    .footer .ft-info {
+        margin-bottom: 0;
+        padding: 3% 80px;
+    }
+    .footer-logo {
+        margin-right: 15%;
+    }
+}
+
+@media(max-width: 1300px) {
+    .contact-link a {
+        padding: 18px 6.5%;
+    }
+
+    .footer-info .info-number, .footer-info .info-add, .footer-link {
+        font-size: 18px;
+    }
+
+    .copyright, #footlink {
+        float: none;
+        padding-top: 10px;
+    }
+    
+
+    .footer-info .info-number, .footer-info .info-add, .footer-link {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 991px) {
+    h2 {
+        font-size: 40px;
+    }
+    .content p {
+        font-size: 20px;
+    }
+
+    .products-a h1 span, h1 {
+        font-size: 36px;
+    }
+    .products-a .products-list li {
+        width: 50%
+    }
+    .contact-link a {
+        padding: 18px 11.5%;
+    }
+    .contact-link {
+        font-size: 18px;
+    }
+
+    .company p {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .text {
+        padding: 30% 0;
+    }
+    
+    .footer-info .info-number {
+        margin-right: 0;
+    }
+    .footer-logo {
+        float: none;
+        padding-bottom: 30px;
+    }
+
+    .footer-info, .footer-link {
+        float: left;
+    }
+    .footer-info {
+        margin-right: 5%;
+    }
+}
+
+@media(max-width: 480px) {
+    h2 {
+        font-size: 28px;
+    }
+    .content p {
+        font-size: 18px;
+    }
+
+    .products-a h1 span {
+        font-size: 30px;
+    }
+    .products-a .products-list li {
+        width: 100%
+    }
+    .contact-link a {
+        padding: 18px 13.5%;
+    }
+    .contact-link {
+        font-size: 17px;
+    }
+
+    .company p {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+
+
+    .footer .footer-link ul li {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .footer-info, .footer-link {
+        width: 100%;
+    }
+}
